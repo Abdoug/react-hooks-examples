@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import UseMemoCase from './UseMemoCase';
 import UseRefCase from './UseRefCase';
 import UseContextCase from './UseContext/Index';
+import UseReducerCase from './UseReducer/Index';
+import UseCallBackCase from './UseCallBack/Index';
 
 function Home() {
     const cases = [{
@@ -14,6 +16,14 @@ function Home() {
         {
             name: "UseContext",
             component: <UseContextCase/>
+        },
+        {
+            name: "UseReducer",
+            component: <UseReducerCase/>
+        },
+        {
+            name: "UseCallBack",
+            component: <UseCallBackCase/>
         }];
     const [currentCaseIndex, setCurrentCaseIndex] = useState(0);
 
