@@ -5,6 +5,7 @@ import UseContextCase from './UseContext';
 import UseReducerCase from './UseReducer';
 import UseCallBackCase from './UseCallBack';
 import UseLocalStorage from './CustomHooks';
+import UseLayoutEffect from './UseLayoutEffect';
 
 function Home() {
     const cases = [{
@@ -29,6 +30,10 @@ function Home() {
         {
             name: "UseLocalStorage",
             component: <UseLocalStorage/>
+        },
+        {
+            name: "UseLayoutEffect",
+            component: <UseLayoutEffect/>
         }];
     const [currentCaseIndex, setCurrentCaseIndex] = useState(0);
 
