@@ -8,6 +8,7 @@ import UseLocalStorage from './CustomHooks';
 import UseLayoutEffect from './UseLayoutEffect';
 import UseTransitionEffect from './UseTransition';
 import UseDeffered from './UseDeffered';
+import UseImperativeHandle from './UseImperativeHandle';
 
 function Home() {
     const cases = [{
@@ -44,6 +45,10 @@ function Home() {
         {
             name: "UseDeffered",
             component: <UseDeffered/>
+        },
+        {
+            name: "UseImperativeHandle",
+            component: <UseImperativeHandle/>
         }];
     const [currentCaseIndex, setCurrentCaseIndex] = useState(0);
 
