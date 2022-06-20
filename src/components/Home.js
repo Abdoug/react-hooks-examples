@@ -6,6 +6,7 @@ import UseReducerCase from './UseReducer';
 import UseCallBackCase from './UseCallBack';
 import UseLocalStorage from './CustomHooks';
 import UseLayoutEffect from './UseLayoutEffect';
+import UseTransitionEffect from './UseTransition';
 
 function Home() {
     const cases = [{
@@ -34,6 +35,10 @@ function Home() {
         {
             name: "UseLayoutEffect",
             component: <UseLayoutEffect/>
+        },
+        {
+            name: "UseTransitionEffect",
+            component: <UseTransitionEffect/>
         }];
     const [currentCaseIndex, setCurrentCaseIndex] = useState(0);
 
