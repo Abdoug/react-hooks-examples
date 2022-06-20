@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import UseMemoCase from './UseMemoCase';
 import UseRefCase from './UseRefCase';
-import UseContextCase from './UseContext/Index';
-import UseReducerCase from './UseReducer/Index';
-import UseCallBackCase from './UseCallBack/Index';
+import UseContextCase from './UseContext';
+import UseReducerCase from './UseReducer';
+import UseCallBackCase from './UseCallBack';
+import UseLocalStorage from './CustomHooks';
 
 function Home() {
     const cases = [{
@@ -24,6 +25,10 @@ function Home() {
         {
             name: "UseCallBack",
             component: <UseCallBackCase/>
+        },
+        {
+            name: "UseLocalStorage",
+            component: <UseLocalStorage/>
         }];
     const [currentCaseIndex, setCurrentCaseIndex] = useState(0);
 
